@@ -1,0 +1,96 @@
+/*CSS*/
+
+body {
+  font-family: 'Cabin', sans-serif;
+  background: url(../images/cork-wallet.png);
+}
+
+/*LAYOUT CONTROL */
+
+header {
+  margin: 20px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#recipeResults {
+  margin: 25px 0;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+  border: black;
+  border-width: 3px;
+  border-style: double;
+}
+
+.grocerybutton {
+  padding: 100px 0 0 0;
+}
+
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+    background-color: #5d0b00;
+    border-color: #700e01;
+}
+
+.button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover, .button.button-primary:focus, button.button-primary:focus, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
+    background-color: #660000;
+    border-color: #5e0a0b;
+}
+
+/*TEXTSTYLE*/
+strong {
+	font-weight: bold;
+}
+
+h1 {
+  font-family: 'Vast Shadow', cursive;
+  font-variant: small-caps;
+}
+
+h2 {
+  font-family: 'Vast Shadow', cursive;
+}
+
+h3 {
+  font-family: 'Cabin', sans-serif;
+}
+
+h4 {
+  font-family: 'Cabin', sans-serif;
+}
+
+ ul {
+    list-style-image: url(../images/beerlist.png);
+}
+
+.linkLike {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.linkLike:hover {
+  text-decoration: none;
+}
+
+
+
+
+/*AUTOCOMPLETE*/
+
+.ui-menu-item {
+  float: left;
+  list-style: none;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.ui-helper-hidden-accessible {
+  font-size: 1.5em;
+  text-align: center;  
+}

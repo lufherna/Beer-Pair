@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>BeerPair</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+<!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- FONT -->
+
+<!-- CSS -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/skeleton.css">
+<link href="https://fonts.googleapis.com/css?family=Cabin|Vast+Shadow" rel="stylesheet"> 
+  <link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+<!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/script/googlemaps.js"></script>
+    <script src="assets/script/showhide.js"></script>
+    <script src="assets/script/api.js"></script>
+    <script src="assets/script/autocomplete.js"></script>
+
+</head>
+<body>
+<!-- Primary Page Layout -->
+<div class="container">
+
+	<div class="row">
+		<header class="text-center">
+		<h1>BeerPair</h1>
+		</header>
+	</div>
+
+<!-- Base Search Form -->
+<div class="row">
+	<div class="ui-widget">
+  <form>
+		<input id="beerSearch" class="nine columns" placeholder="Type your Type of Beer" type="text">
+    <button id="searchButton" class="button-primary three columns">Find Your Recipe!</button> 
+  </form>
+	</div>
+</div>
+
+<!-- Javascript Output Here -->
+
+<div id="searchResults">
+
+  <div class="row text-center">
+    <h2>Results</h2>
+  </div>
+  <div class="row">
+    <div class="two columns">
+      <div id="clickRecipe1" class="linkLike">
+        <span id="recipe1"></span>
+      </div>
+    </div>
+
+    <div class="two columns">
+      <div id="clickRecipe2" class="linkLike">
+        <span id="recipe2"></span>
+      </div>
+    </div>
+
+    <div class="two columns">
+      <div id="clickRecipe3" class="linkLike">
+        <span id="recipe3"></span>
+      </div>
+    </div>
+
+    <div class="two columns">
+      <div id="clickRecipe4" class="linkLike">
+        <span id="recipe4"></span>
+      </div>
+    </div>
+
+    <div class="two columns">
+      <div id="clickRecipe5" class="linkLike">
+        <span id="recipe5"></span>
+      </div>
+    </div>
+
+    <div class="two columns">
+        <button id="reset" class="button-primary">Reset Pair</button>
+		</div>
+  </div>
+
+</div><!--/#searchResults -->
+
+
+<div id="recipeResults">
+
+<div class="row">
+  <div class="five columns">
+      <h4 class="text-center"><span id="recipeTitle"></span></h4>
+			<span id="foodimage"></span>
+  </div>
+  <div class="four columns">
+    <h4 class="text-center">Ingredients</h4>
+      <span id="ingredients"></span>
+  </div>
+  <div class="three columns">
+    <div class="text-center">
+      <h4>Full Recipe</h4>
+        <span id="sourceURL"></span>
+      <div class="grocerybutton">
+          <button id="storeSearch" class="button-primary text-center">Find Grocery Stores</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- <div class="row" id="map"></div> -->
+
+</div><!--/#recipeResults -->
+
+  </div><!--/.container --> 
+
+</div>
+
+<!-- End Document -->
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI6TKZ2FhR9NJNpPJBhfnoJpC9wBPwy7c&libraries=places&callback=initMap"></script>
+
+</body>
+</html>
